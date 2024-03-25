@@ -12,69 +12,88 @@ h1, h2 {
 figcaption {
     font-weight: bold;
     font-variant-caps: small-caps;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 q {
     font-style: italic;
     font-family: cursive;
-    font-size: 2em;
+    font-size: 1rem;
 
 }
 
 footer p {
-    font-size: 0.75em;
+    font-size: 1rem;
+    text-align: center;
 }
 
 body {
-    width: 95%; 
+    width: 97%; 
     max-width: 2000px;
-    padding: 2em; 
-    margin: 0 auto;
+    padding: 2rem; 
+    margin: 1rem auto;
+    float: center;
+    background-color: hsla(83, 13%, 65%, 0.5);
 }
 
 .image-class {
     width: 100%; 
     height: 1;
-    border-radius: 10px;
+    border-radius:1rem;
 }
 
 .figure-class {
     width: 100%;
     height: 1;
-    padding: 2em; 
-    margin: 1.5em auto;  
+    padding: 2rem; 
+    margin: 1rem auto;  
 }
 
 video, iframe {
     width: 90%;
-    padding: 2em;
+    padding: 1rem;
     background-color: rgb(0, 0, 128) 
 }
 
 header, footer {
     width: 90;
     text-align: center;
-    border: 2px solid #000000;
-    background-image: linear-gradient(rgb(0, 0, 128), yellow);
+    border: 0.1rem solid #000000;
+    background-image: linear-gradient(rgb(115, 255, 0), yellow);
+    color: #000000;
 }
 
 
 #bio blockquote {
-    text-align: left;
+    text-align: center;
   }
+
+#bio{
+    width : 30%;
+    float : left;
+    padding : 0.25rem;
+    margin : .25rem;
+}
+
+
+#quote{
+    float : center;
+    text-align: center;
+    
+}
+
 
 .main-section {
     text-align: center;
-    padding: 1.5em;
+    padding: 1.5rem;
 }
 
 
 .image-class {
-    padding: 2em;
+    padding: 1rem;
 }
 
-blockquote q {
+blockquote q{
     padding: 2px;
     border: 2px solid rgb(0, 0, 0);
     box-shadow: 5px 5px 5px rgb(22, 1, 206); 
@@ -92,18 +111,170 @@ h1, h2 {
     color: navy;
 }
 
-.main-section {
-    background-color: hsla(83, 13%, 65%, 0.5);
-}
-
-#absolute-path-image {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 2px;
-    background-color: hsla(210, 100%, 50%, 0.959);
-}
 
 #relative-path-image {
-    border: 2px solid rgb(0, 0, 0); 
-    border-radius: 2px; 
+    border: 0.1rem solid rgb(0, 0, 0); 
+    border-radius: 1rem; 
     background-color: hsla(210, 100%, 50%, 0.959);
+    padding : 1rem;
+    margin : 1rem;
+    width : 30%;
+    float : right;
+    
+}
+
+
+
+nav{
+    padding: 0 1rem 2rem 1rem ;
+    margin : 1rem;
+    text-align: center;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding : 0.25rem;
+    margin : 0 0.25rem;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    font: 1rem;
+}
+
+nav > ul > li > a{
+    color: yellow;;
+    background-color: navy;;
+    display : block;
+    text-decoration: none;
+    border : 0.1rem solid #000000;;
+}
+nav > ul > li > a:hover{
+    color:  #000000;
+    background-color: hsla(210, 100%, 50%, 0.959);
+    border : 0.1rem solid  #000000;;
+}
+
+
+aside ul {
+    list-style-type: none;
+}
+
+table, th, td{
+    border : 0.1rem solid black;
+}
+
+aside{
+    margin : 1rem; 
+    width : 30%;
+    float : right;
+}
+
+aside h3 {
+    font-variant: small-caps;
+    color: rgb(0, 0, 128);
+    text-align: center; 
+}
+
+
+#home-link{
+    float :left;
+    width : 50%;
+}
+#contact-link{
+    float : right;
+    width : 50%
+}
+
+#main {
+    float: left;
+    width: 70%;
+    margin : 1rem;
+}
+
+aside th, aside td {
+    font-weight: bold; 
+    font-style: italic; 
+    font-variant: small-caps; 
+    color: #000000; 
+    text-align: center; 
+}
+
+aside a {
+    text-decoration: none; 
+    color: #000000;
+    line-height: 1.5; 
+}
+
+aside a:hover {
+    color: hsla(210, 100%, 50%, 0.959);
+}
+
+
+#Calligraphy{
+    text-align: center;
+}
+
+#footerid{
+    text-align: center;
+}
+
+form {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+label {
+    color: #000000;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: auto;
+}
+
+input[type="text"], input[type="email"],[type="animal"]{
+    width: 47%; 
+    height: 1rem;
+}
+
+textarea{
+    width: 47%;
+}
+
+input, textarea {
+    padding: 0.3rem; 
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px; 
+    }  
+    .element {
+        width: 100%; 
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .element {
+        width: 67%; 
+        margin: 1rem; 
+        padding: 1rem; 
+        text-align: left; 
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .element {
+        width: 50%; 
+        margin: 1rem; 
+        padding: 1rem; 
+        text-align: right; 
+    }
 }
